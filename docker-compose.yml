@@ -1,0 +1,16 @@
+services:
+  danielfgray-com:
+    build: .
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.danielfgray-com.loadbalancer.server.port=80"
+      - "traefik.http.routers.danielfgray-com.rule=Host(`danielfgray.com`) || Host(`www.danielfgray.com`)"
+      - "traefik.http.routers.danielfgray-com.entrypoints=websecure"
+      - "traefik.http.routers.danielfgray-com.tls.certResolver=letsencrypt"
+    networks:
+      - infra
+
+networks:
+  infra:
+    external: true
