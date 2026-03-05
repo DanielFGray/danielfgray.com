@@ -7,14 +7,14 @@
 }
 
 :root {
-  --music-bg: #1a1a2e;
-  --music-text: #e0d6c8;
-  --music-accent: #e8a838;
-  --music-muted: #8a7f72;
-  --code-bg: #f5f5f0;
-  --code-text: #2d2d2d;
-  --code-accent: #4a7c59;
-  --code-muted: #7a7a7a;
+  --music-bg: #0e0e0e;
+  --music-text: #f0f0f0;
+  --music-accent: #e08a3c;
+  --music-muted: #a0a0a0;
+  --code-bg: #fafafa;
+  --code-text: #18181b;
+  --code-accent: #0ea5e9;
+  --code-muted: #71717a;
 }
 
 html,
@@ -61,7 +61,7 @@ body {
 }
 
 .music .cta:hover {
-  background: #d4962e;
+  background: #c97530;
 }
 
 /* Code side */
@@ -84,7 +84,7 @@ body {
 }
 
 .code .cta:hover {
-  background: #3d6a4b;
+  background: #0284c7;
 }
 
 /* Center name */
